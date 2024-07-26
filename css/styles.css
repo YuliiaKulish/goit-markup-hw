@@ -1,0 +1,36 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary--bg-color: #f5f4fa;
+  --accent-bg-color: #2f303a;
+
+  /* rgba(255, 255, 255, 0.6);
+    #000000*/
+
+  --font-family: 'Roboto', sans-serif;
+  --second-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+
+    font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  line-height: 1.17;
+}
+
+/* Logo */
+.logo {
+    font-family: var(--second-family);
+font-size: 26px;
+letter-spacing: 0.03em;
+color: #000000;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
