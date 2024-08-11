@@ -108,6 +108,22 @@ img {
   color: var(--accent-color);
 }
 
+.site-nav .current {
+  position: relative;
+}
+
+.site-nav .current::after {
+  position: absolute;
+  bottom: 0;
+    left: 0;
+  content: "";
+  border-radius: 2px;
+  width: 100%;
+height: 4px;
+background: #2196f3;
+}
+
+
 /* Auth-nav */
 .auth-nav {
   margin-left: auto;
@@ -285,6 +301,26 @@ img {
 
 .list-proj > li:not(:last-child) {
   margin-right: 30px;
+}
+
+.list-proj li {
+  position: relative;
+}
+
+.list-proj p {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+font-weight: 700;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+display: flex;
+justify-content: center;
+align-items: center;
+  background-color: rgba(47, 48, 58, 0.8);
+  color: #fff;
+  width: 100%;
+height: 70px;
 }
 
 /* Наша команда */
@@ -513,6 +549,34 @@ img {
   letter-spacing: 0.03em;
 }
 
-/* .item {
-  flex-basis: calc((100% - 20px) / 3);
-} */
+.examples-text p {
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.03em;
+}
+
+/* Backdrop */
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
+background: #fff;
+border-radius: 4px;
+width: 528px;
+height: 581px;
+}
+
+.modal-closed {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: #fff;
+width: 30px;
+height: 30px;
+cursor: pointer;
+}

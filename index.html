@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -60,7 +64,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button hero-btn">Замовити послугу</button>
+          <button type="button" class="button hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
 
@@ -120,11 +124,18 @@
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="list-proj">
-            <li><img src="./images/programing.jpg" alt="програмвання" width="370" /></li>
+            <li>
+              <img src="./images/programing.jpg" alt="програмвання" width="370" />
+              <p>Десктопні додатки</p>
+            </li>
             <li>
               <img src="./images/interface_mobile.jpg" alt="мобільний інтерфейс" width="370" />
+              <p>Мобільні додатки</p>
             </li>
-            <li><img src="./images/design.jpg" alt="дизайн" width="370" /></li>
+            <li>
+              <img src="./images/design.jpg" alt="дизайн" width="370" />
+              <p>Дизайнерські рішення</p>
+            </li>
           </ul>
         </div>
       </section>
@@ -145,25 +156,25 @@
                 <p class="profession" lang="en">Product Designer</p>
                 <ul class="team-social">
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Instagram">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Twitter">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Facebook">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на LinkedIn">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
@@ -178,25 +189,25 @@
                 <p class="profession" lang="en">Frontend Developer</p>
                 <ul class="team-social">
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Instagram">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Twitter">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Facebook">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на LinkedIn">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
@@ -211,25 +222,25 @@
                 <p class="profession" lang="en">Marketing</p>
                 <ul class="team-social">
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Instagram">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Twitter">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Facebook">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на LinkedIn">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
@@ -248,25 +259,25 @@
                 <p class="profession" lang="en">UI Designer</p>
                 <ul class="team-social">
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Instagram">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Twitter">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на Facebook">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use></svg
                     ></a>
                   </li>
                   <li>
-                    <a href="" aria-label="">
+                    <a href="" aria-label="Посилання на LinkedIn">
                       <svg width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use></svg
                     ></a>
@@ -285,37 +296,37 @@
         <h2 class="section-title">Постійні клієнти</h2>
         <ul class="customers-list">
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №1">
               <svg>
                 <use href="./images/icons.svg#icon-logo1"></use></svg
             ></a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №2">
               <svg>
                 <use href="./images/icons.svg#icon-logo2"></use></svg
             ></a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №3">
               <svg>
                 <use href="./images/icons.svg#icon-logo3"></use></svg
             ></a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №4">
               <svg>
                 <use href="./images/icons.svg#icon-logo4"></use></svg
             ></a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №5">
               <svg>
                 <use href="./images/icons.svg#icon-logo5"></use></svg
             ></a>
           </li>
           <li>
-            <a href="">
+            <a href="" aria-label="Посилання на клінта №6">
               <svg>
                 <use href="./images/icons.svg#icon-logo6"></use></svg
             ></a>
@@ -323,6 +334,15 @@
         </ul>
       </div>
     </section>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-closed" data-modal-close>
+          <svg height="18" width="18">
+            <use href="./images/icons.svg#icon-closed" />
+          </svg>
+        </button>
+      </div>
+    </div>
 
     <!-- Футер -->
     <footer class="footer">
@@ -345,28 +365,28 @@
           <p>Приєднуйтесь</p>
           <ul>
             <li>
-              <a href="">
+              <a href="" aria-label="Посилання на Instagram">
                 <svg>
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" aria-label="Посилання на Twitter">
                 <svg>
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" aria-label="Посилання на Facebook">
                 <svg>
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a href="">
+              <a href="" aria-label="Посилання на LinkedIn">
                 <svg>
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -376,5 +396,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
