@@ -339,10 +339,36 @@
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button class="modal-closed" data-modal-close>
-          <svg height="18" width="18">
+          <svg>
             <use href="./images/icons.svg#icon-closed" />
           </svg>
         </button>
+        <p>Залиште свої дані, ми вам передзвонимо</p>
+        <form>
+          <label class="form-field"
+            ><span>Ім'я</span><input type="text" name="name" /><svg>
+              <use href="./images/icons.svg#icon-personForm"></use></svg
+          ></label>
+          <label class="form-field"
+            ><span>Телефон</span><input type="tel" name="tel" /><svg>
+              <use href="./images/icons.svg#icon-phoneForm"></use></svg
+          ></label>
+          <label class="form-field"
+            ><span>Пошта</span><input type="email" name="email" /><svg>
+              <use href="./images/icons.svg#icon-mailForm"></use></svg
+          ></label>
+          <label class="text"
+            ><span>Коментар</span><textarea placeholder="Введіть текст" name="comment"></textarea>
+          </label>
+          <label class="check"
+            ><input class="checkbox" type="checkbox" name="policy" value="policy" /><svg
+              class="check-icon"
+            >
+              <use href="./images/icons.svg#icon-check"></use></svg
+            ><span>Погоджуюся з розсилкою та приймаю <a href="/">_Умови договору</a></span></label
+          >
+          <button class="submit-form" type="submit">Відправити</button>
+        </form>
       </div>
     </div>
 
@@ -395,6 +421,16 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p>Підпишіться на розсилку</p>
+          <input type="text" name="subscribe" placeholder="E-mail" />
+          <button type="submit">
+            Підписатися
+            <svg width="24" height="24">
+              <use href="./images/icons.svg#icon-send" />
+            </svg>
+          </button>
         </div>
       </div>
     </footer>
