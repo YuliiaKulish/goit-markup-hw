@@ -1,10 +1,7 @@
-
 .customers__list {
     display: flex;
-  }
-  
-  .customers__item:not(:last-child) {
-    margin-right: 30px;
+    flex-wrap: wrap;
+    gap: 30px;
   }
   
   .customers__link {
@@ -13,10 +10,18 @@
     align-items: center;
     border: 1px solid #afb1b8;
     border-radius: 4px;
-    width: 170px;
+    width: 210px;
     height: 92px;
     color: #afb1b8;
     transition: color 250ms $animation, border 250ms $animation;
+
+    @media screen and (min-width: $tablet) {
+      width: 226px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      width: 170px;
+    }
   }
   
   .customers__link:hover,

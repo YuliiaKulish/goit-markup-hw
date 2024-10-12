@@ -60,6 +60,64 @@
           </li>
         </ul>
       </div>
+      <!-- Mobile -->
+      <div class="container header-mobile">
+        <div class="header-mobile__menu">
+          <a class="logo header__logo" href="./index.html" lang="en"
+            ><span class="logo__accent">Web</span>Studio</a
+          >
+          <button
+            class="menu-button"
+            type="button"
+            aria-expanded="false"
+            aria-controls="menu-container"
+            data-menu-button
+          >
+            <svg
+              class="header-mobile__btn"
+              aria-label="Перемикач мобільного меню"
+              width="40"
+              height="40"
+            >
+              <use class="icon-cross" href="./images/icons.svg#icon-cross"></use>
+              <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container" data-menu>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="./index.html">Студія</a>
+              </li>
+              <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
+              <li class="nav__item"><a class="nav__link" href="/">Контакти</a></li>
+            </ul>
+          </nav>
+          <ul class="contacts">
+            <li class="contacts__tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+            <li class="contacts__mail">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="" aria-label="Посилання на Instagram"
+                >Instagram</a
+              >
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="" aria-label="Посилання на Twitter">Twitter</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="" aria-label="Посилання на Facebook">Facebook</a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="" aria-label="Посилання на LinkedIn">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -130,25 +188,45 @@
           <h2 class="title">Чим ми займаємося</h2>
           <ul class="works__list">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/programing.jpg"
-                alt="програмування"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/work1.webp 1x, ./images/desktop/work1@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desktop/work1.jpg 1x, ./images/desktop/work1@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/work1.jpg" alt="програмування" />
+              </picture>
               <p class="works__text">Десктопні додатки</p>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/interface_mobile.jpg"
-                alt="мобільний інтерфейс"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="./images/desktop/work2.webp 1x, ./images/desktop/work2@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desktop/work2.jpg 1x, ./images/desktop/work2@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/work2.jpg" alt="мобільні застосунки" />
+              </picture>
               <p class="works__text">Мобільні додатки</p>
             </li>
             <li class="works__item">
-              <img class="works__img" src="./images/design.jpg" alt="дизайн" width="370" />
+              <picture>
+                <source
+                  srcset="./images/desktop/work3.webp 1x, ./images/desktop/work3@2x.webp 2x"
+                  type="image/webp"
+                />
+                <source
+                  srcset="./images/desktop/work3.jpg 1x, ./images/desktop/work3@2x.jpg 2x"
+                  type="image/jpeg"
+                />
+                <img src="./images/desktop/work3.jpg" alt="дизайн" />
+              </picture>
               <p class="works__text">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -161,39 +239,60 @@
           <h2 class="title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team__img"
-                src="./images/product_designer.jpg"
-                alt="Ігор Дем'яненко, дизайнер"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile/igor.webp 1x, ./images/mobile/igor@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mobile/igor.jpg 1x, ./images/mobile/igor@2x.jpg 2x"
+                  type="image/jpeg" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/igor.webp 1x, ./images/tablet/igor@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/tablet/igor.jpg 1x, ./images/tablet/igor@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/igor.webp 1x, ./images/desktop/igor@2x.webp 2x"
+                  type="image/webp" media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/igor.jpg 1x, ./images/desktop/igor@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 1200px)"
+                />
+                <img src="./images/mobile/igor.jpg" alt="Ігор Дем'яненко, дизайнер" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Ігор Дем'яненко</h3>
                 <p class="team__profession" lang="en">Product Designer</p>
                 <ul class="team__socials socials">
                   <li class="socials__item">
-                    <a class="socials__link" href="" aria-label="Посилання на Instagram">
+                    <a class="socials__link" href="#" aria-label="Посилання на Instagram">
                       <svg class="socials__img" width="20" height="20">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="" aria-label="Посилання на Twitter">
+                    <a class="socials__link" href="#" aria-label="Посилання на Twitter">
                       <svg class="socials__img" width="20" height="20">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="" aria-label="Посилання на Facebook">
+                    <a class="socials__link" href="#" aria-label="Посилання на Facebook">
                       <svg class="socials__img" width="20" height="20">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials__item">
-                    <a class="socials__link" href="" aria-label="Посилання на LinkedIn">
+                    <a class="socials__link" href="#" aria-label="Посилання на LinkedIn">
                       <svg class="socials__img" width="20" height="20">
                         <use href="./images/icons.svg#icon-linkedin"></use>
                       </svg>
@@ -203,7 +302,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/frontend.jpg" alt="Ольга Рєпіна, розробник" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mobile/olga.webp 1x, ./images/mobile/olga@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mobile/olga.jpg 1x, ./images/mobile/olga@2x.jpg 2x"
+                  type="image/jpeg" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/olga.webp 1x, ./images/tablet/olga@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/tablet/olga.jpg 1x, ./images/tablet/olga@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/olga.webp 1x, ./images/desktop/olga@2x.webp 2x"
+                  type="image/webp" media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/olga.jpg 1x, ./images/desktop/olga@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 1200px)"
+                />
+                <img src="./images/mobile/olga.jpg" alt="Ольга Рєпіна, розробниця" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Ольга Рєпіна</h3>
                 <p class="team__profession" lang="en">Frontend Developer</p>
@@ -240,7 +365,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/marketing.jpg" alt="Микола Тарасов, маркетолог" width="270" />
+              <picture>
+                <source
+                  srcset="./images/mobile/mykola.webp 1x, ./images/mobile/mykola@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mobile/mykola.jpg 1x, ./images/mobile/mykola@2x.jpg 2x"
+                  type="image/jpeg" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/mykola.webp 1x, ./images/tablet/mykola@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/tablet/mykola.jpg 1x, ./images/tablet/mykola@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/mykola.webp 1x, ./images/desktop/mykola@2x.webp 2x"
+                  type="image/webp" media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/mykola.jpg 1x, ./images/desktop/mykola@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 1200px)"
+                />
+                <img src="./images/mobile/mykola.jpg" alt="Микола Тарасов, маркетолог" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Микола Тарасов</h3>
                 <p class="team__profession" lang="en">Marketing</p>
@@ -277,11 +428,33 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/designer.jpg"
-                alt="Михайло Єрмаков, дизайнер інтерфейсу"
-                width="270"
-              />
+              <picture>
+                <source
+                  srcset="./images/mobile/mykhailo.webp 1x, ./images/mobile/mykhailo@2x.webp 2x"
+                  type="image/webp" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/mobile/mykhailo.jpg 1x, ./images/mobile/mykhailo@2x.jpg 2x"
+                  type="image/jpeg" media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/tablet/mykhailo.webp 1x, ./images/tablet/mykhailo@2x.webp 2x"
+                  type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/tablet/mykhailo.jpg 1x, ./images/tablet/mykhailo@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="./images/desktop/mykhailo.webp 1x, ./images/desktop/mykhailo@2x.webp 2x"
+                  type="image/webp" media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./images/desktop/mykhailo.jpg 1x, ./images/desktop/mykhailo@2x.jpg 2x"
+                  type="image/jpeg" media="(min-width: 1200px)"
+                />
+                <img src="./images/mobile/mykhailo.jpg" alt="Михайло Єрмаков, дизайнер інтерфейсу" />
+              </picture>
               <div class="team__meta">
                 <h3 class="team__name">Михайло Єрмаков</h3>
                 <p class="team__profession" lang="en">UI Designer</p>
@@ -320,10 +493,9 @@
           </ul>
         </div>
       </section>
-    </main>
 
-    <!-- Customers -->
-    <section class="section customers">
+      <!-- Customers -->
+      <section class="section customers">
       <div class="container">
         <h2 class="title">Постійні клієнти</h2>
         <ul class="customers__list">
@@ -372,6 +544,7 @@
         </ul>
       </div>
     </section>
+    </main>
 
     <!-- Footer -->
     <footer class="footer">
@@ -446,6 +619,7 @@
             </li>
           </ul>
         </div>
+
         <div class="footer__subscribe subscribe">
           <p class="footer__subtitle">Підпишіться на розсилку</p>
           <input class="subscribe__input" type="text" name="subscribe" placeholder="E-mail" />
@@ -495,17 +669,24 @@
             ><textarea class="form__comment" placeholder="Введіть текст" name="comment"></textarea>
           </label>
           <label class="form__label-checkbox checkbox"
-            ><input class="checkbox__input visually-hidden" type="checkbox" name="policy" value="policy" /><svg
-              class="checkbox__icon"
-            >
+            ><input
+              class="checkbox__input visually-hidden"
+              type="checkbox"
+              name="policy"
+              value="policy"
+            /><svg class="checkbox__icon">
               <use href="./images/icons.svg#icon-check"></use>
             </svg>
-            <span class="checkbox__text">Погоджуюся з розсилкою та приймаю <a class="checkbox__link" href="/">_Умови договору</a></span></label
+            <span class="checkbox__text"
+              >Погоджуюся з розсилкою та приймаю
+              <a class="checkbox__link" href="/">_Умови договору</a></span
+            ></label
           >
           <button class="checkbox__btn btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
