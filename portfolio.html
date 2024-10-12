@@ -37,7 +37,9 @@
             <li class="nav__item">
               <a class="nav__link" href="./index.html">Студія</a>
             </li>
-            <li class="nav__item"><a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a></li>
+            <li class="nav__item">
+              <a class="nav__link nav__link--active" href="./portfolio.html">Портфоліо</a>
+            </li>
             <li class="nav__item"><a class="nav__link" href="/">Контакти</a></li>
           </ul>
         </nav>
@@ -84,27 +86,45 @@
               <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-        </div>
-        <div class="menu-container" data-menu>
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link nav__link--active" href="./index.html">Студія</a>
+          <div class="menu-container" id="menu-container" data-menu>
+            <nav class="nav">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link nav__link--active" href="./index.html">Студія</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="nav__item"><a class="nav__link" href="/">Контакти</a></li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+              <li class="contacts__mail">
+                <a href="mailto:info@devstudio.com">info@devstudio.com</a>
               </li>
-              <li class="nav__item"><a class="nav__link" href="./portfolio.html">Портфоліо</a></li>
-              <li class="nav__item"><a class="nav__link" href="/">Контакти</a></li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-            <li class="contacts__mail"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          </ul>
-          <ul class="mobile-social">
-            <li class="mobile-social__item"><a class="mobile-social__link" href="" aria-label="Посилання на Instagram">Instagram</a></li>
-            <li class="mobile-social__item"><a class="mobile-social__link" href="" aria-label="Посилання на Twitter">Twitter</a></li>
-            <li class="mobile-social__item"><a class="mobile-social__link" href="" aria-label="Посилання на Facebook">Facebook</a></li>
-            <li class="mobile-social__item"><a class="mobile-social__link" href="" aria-label="Посилання на LinkedIn">LinkedIn</a></li>
-          </ul>
+            <ul class="mobile-social">
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="" aria-label="Посилання на Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="" aria-label="Посилання на Twitter">Twitter</a>
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="" aria-label="Посилання на Facebook"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mobile-social__item">
+                <a class="mobile-social__link" href="" aria-label="Посилання на LinkedIn"
+                  >LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
@@ -117,10 +137,14 @@
           <!-- Button -->
           <ul class="filter">
             <li class="filter__item"><button class="filter__btn" type="button">Усі</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Веб-сайти</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Веб-сайти</button>
+            </li>
             <li class="filter__item"><button class="filter__btn" type="button">Додатки</button></li>
             <li class="filter__item"><button class="filter__btn" type="button">Дизайн</button></li>
-            <li class="filter__item"><button class="filter__btn" type="button">Маркетинг</button></li>
+            <li class="filter__item">
+              <button class="filter__btn" type="button">Маркетинг</button>
+            </li>
           </ul>
 
           <!-- Examples -->
@@ -130,28 +154,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio1.webp 1x, ./images/mobile/portfolio1@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio1.webp    1x,
+                        ./images/mobile/portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio1.jpg 1x, ./images/mobile/portfolio1@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio1.jpg    1x,
+                        ./images/mobile/portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio1.webp 1x, ./images/tablet/portfolio1@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio1.webp    1x,
+                        ./images/tablet/portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio1.jpg 1x, ./images/tablet/portfolio1@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio1.jpg    1x,
+                        ./images/tablet/portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio1.webp 1x, ./images/desktop/portfolio1@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio1.webp    1x,
+                        ./images/desktop/portfolio1@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio1.jpg 1x, ./images/desktop/portfolio1@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio1.jpg    1x,
+                        ./images/desktop/portfolio1@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio1.jpg" alt="ноутбук з вікритим сайтом" />
                   </picture>
@@ -172,30 +220,57 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio2.webp 1x, ./images/mobile/portfolio2@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio2.webp    1x,
+                        ./images/mobile/portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio2.jpg 1x, ./images/mobile/portfolio2@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio2.jpg    1x,
+                        ./images/mobile/portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio2.webp 1x, ./images/tablet/portfolio2@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio2.webp    1x,
+                        ./images/tablet/portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio2.jpg 1x, ./images/tablet/portfolio2@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio2.jpg    1x,
+                        ./images/tablet/portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio2.webp 1x, ./images/desktop/portfolio2@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio2.webp    1x,
+                        ./images/desktop/portfolio2@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio2.jpg 1x, ./images/desktop/portfolio2@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio2.jpg    1x,
+                        ./images/desktop/portfolio2@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
-                    <img src="./images/mobile/portfolio2.jpg" alt="постер з двома баскетболістами" />
+                    <img
+                      src="./images/mobile/portfolio2.jpg"
+                      alt="постер з двома баскетболістами"
+                    />
                   </picture>
                   <p class="examples__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
@@ -214,28 +289,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio3.webp 1x, ./images/mobile/portfolio3@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio3.webp    1x,
+                        ./images/mobile/portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio3.jpg 1x, ./images/mobile/portfolio3@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio3.jpg    1x,
+                        ./images/mobile/portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio3.webp 1x, ./images/tablet/portfolio3@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio3.webp    1x,
+                        ./images/tablet/portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio3.jpg 1x, ./images/tablet/portfolio3@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio3.jpg    1x,
+                        ./images/tablet/portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio3.webp 1x, ./images/desktop/portfolio3@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio3.webp    1x,
+                        ./images/desktop/portfolio3@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio3.jpg 1x, ./images/desktop/portfolio3@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio3.jpg    1x,
+                        ./images/desktop/portfolio3@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio3.jpg" alt="логотип ресторану" />
                   </picture>
@@ -256,28 +355,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio4.webp 1x, ./images/mobile/portfolio4@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio4.webp    1x,
+                        ./images/mobile/portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio4.jpg 1x, ./images/mobile/portfolio4@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio4.jpg    1x,
+                        ./images/mobile/portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio4.webp 1x, ./images/tablet/portfolio4@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio4.webp    1x,
+                        ./images/tablet/portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio4.jpg 1x, ./images/tablet/portfolio4@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio4.jpg    1x,
+                        ./images/tablet/portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio4.webp 1x, ./images/desktop/portfolio4@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio4.webp    1x,
+                        ./images/desktop/portfolio4@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio4.jpg 1x, ./images/desktop/portfolio4@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio4.jpg    1x,
+                        ./images/desktop/portfolio4@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio4.jpg" alt="навушники" />
                   </picture>
@@ -298,28 +421,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio5.webp 1x, ./images/mobile/portfolio5@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio5.webp    1x,
+                        ./images/mobile/portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio5.jpg 1x, ./images/mobile/portfolio5@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio5.jpg    1x,
+                        ./images/mobile/portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio5.webp 1x, ./images/tablet/portfolio5@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio5.webp    1x,
+                        ./images/tablet/portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio5.jpg 1x, ./images/tablet/portfolio5@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio5.jpg    1x,
+                        ./images/tablet/portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio5.webp 1x, ./images/desktop/portfolio5@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio5.webp    1x,
+                        ./images/desktop/portfolio5@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio5.jpg 1x, ./images/desktop/portfolio5@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio5.jpg    1x,
+                        ./images/desktop/portfolio5@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio5.jpg" alt="два бокси" />
                   </picture>
@@ -340,28 +487,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio6.webp 1x, ./images/mobile/portfolio6@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio6.webp    1x,
+                        ./images/mobile/portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio6.jpg 1x, ./images/mobile/portfolio6@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio6.jpg    1x,
+                        ./images/mobile/portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio6.webp 1x, ./images/tablet/portfolio6@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio6.webp    1x,
+                        ./images/tablet/portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio6.jpg 1x, ./images/tablet/portfolio6@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio6.jpg    1x,
+                        ./images/tablet/portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio6.webp 1x, ./images/desktop/portfolio6@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio6.webp    1x,
+                        ./images/desktop/portfolio6@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio6.jpg 1x, ./images/desktop/portfolio6@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio6.jpg    1x,
+                        ./images/desktop/portfolio6@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio6.jpg" alt="сайт на екрані" />
                   </picture>
@@ -382,28 +553,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio7.webp 1x, ./images/mobile/portfolio7@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio7.webp    1x,
+                        ./images/mobile/portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio7.jpg 1x, ./images/mobile/portfolio7@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio7.jpg    1x,
+                        ./images/mobile/portfolio7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio7.webp 1x, ./images/tablet/portfolio7@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio7.webp    1x,
+                        ./images/tablet/portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio7.jpg 1x, ./images/tablet/portfolio7@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio7.jpg    1x,
+                        ./images/tablet/portfolio7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio7.webp 1x, ./images/desktop/portfolio7@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio7.webp    1x,
+                        ./images/desktop/portfolio7@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio7.jpg 1x, ./images/desktop/portfolio7@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio7.jpg    1x,
+                        ./images/desktop/portfolio7@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio7.jpg" alt="відкритий журнал" />
                   </picture>
@@ -424,28 +619,52 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio8.webp 1x, ./images/mobile/portfolio8@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio8.webp    1x,
+                        ./images/mobile/portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio8.jpg 1x, ./images/mobile/portfolio8@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio8.jpg    1x,
+                        ./images/mobile/portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio8.webp 1x, ./images/tablet/portfolio8@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio8.webp    1x,
+                        ./images/tablet/portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio8.jpg 1x, ./images/tablet/portfolio8@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio8.jpg    1x,
+                        ./images/tablet/portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio8.webp 1x, ./images/desktop/portfolio8@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio8.webp    1x,
+                        ./images/desktop/portfolio8@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio8.jpg 1x, ./images/desktop/portfolio8@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio8.jpg    1x,
+                        ./images/desktop/portfolio8@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
                     <img src="./images/mobile/portfolio8.jpg" alt="бірка" />
                   </picture>
@@ -466,30 +685,57 @@
                 ><div class="examples__box">
                   <picture>
                     <source
-                      srcset="./images/mobile/portfolio9.webp 1x, ./images/mobile/portfolio9@2x.webp 2x"
-                      type="image/webp" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio9.webp    1x,
+                        ./images/mobile/portfolio9@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/mobile/portfolio9.jpg 1x, ./images/mobile/portfolio9@2x.jpg 2x"
-                      type="image/jpeg" media="(max-width: 767px)"
+                      srcset="
+                        ./images/mobile/portfolio9.jpg    1x,
+                        ./images/mobile/portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(max-width: 767px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio9.webp 1x, ./images/tablet/portfolio9@2x.webp 2x"
-                      type="image/webp" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio9.webp    1x,
+                        ./images/tablet/portfolio9@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/tablet/portfolio9.jpg 1x, ./images/tablet/portfolio9@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="
+                        ./images/tablet/portfolio9.jpg    1x,
+                        ./images/tablet/portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 768px) and (max-width: 1199px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio9.webp 1x, ./images/desktop/portfolio9@2x.webp 2x"
-                      type="image/webp" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio9.webp    1x,
+                        ./images/desktop/portfolio9@2x.webp 2x
+                      "
+                      type="image/webp"
+                      media="(min-width: 1200px)"
                     />
                     <source
-                      srcset="./images/desktop/portfolio9.jpg 1x, ./images/desktop/portfolio9@2x.jpg 2x"
-                      type="image/jpeg" media="(min-width: 1200px)"
+                      srcset="
+                        ./images/desktop/portfolio9.jpg    1x,
+                        ./images/desktop/portfolio9@2x.jpg 2x
+                      "
+                      type="image/jpeg"
+                      media="(min-width: 1200px)"
                     />
-                    <img src="./images/mobile/portfolio9.jpg" alt="відкритий застосунок на ноутбуці" />
+                    <img
+                      src="./images/mobile/portfolio9.jpg"
+                      alt="відкритий застосунок на ноутбуці"
+                    />
                   </picture>
                   <p class="examples__overlay">
                     Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.

@@ -34,9 +34,9 @@
 }
 
 .team__meta {
-  padding: 30px 122px 24px;
+  padding: 30px 22px 24px;
   @media screen and (min-width: $tablet) {
-    padding: 30px 74px 24px;
+    padding: 30px 24px 24px;
   }
   @media screen and (min-width: $desktop) {
     padding: 30px 32px;
@@ -61,6 +61,7 @@
 
 .socials {
   display: flex;
+  justify-content: center;
 }
 
 .socials__item:not(:last-child) {
